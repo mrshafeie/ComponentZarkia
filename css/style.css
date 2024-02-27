@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(226, 231, 231);
+}
+.container{
+    margin: 0 auto;
+}
+ .menu{
+    width: 700px;
+    list-style: none;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
