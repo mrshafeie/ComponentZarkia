@@ -32,12 +32,12 @@ ul.menu {
     margin-bottom: 40px;
 }
 
-.item {
+ul.menu .item {
     display: inline-block;
     position: relative;
 }
 
-a {
+ul.menu a {
     text-decoration: none;
     text-align: center;
     color: black;
@@ -45,13 +45,13 @@ a {
     position: relative;
 }
 
-a:hover {
+ul.menu a:hover {
     color: blue;
     padding: 9px 10px;
     box-shadow: 2px 2px 2px 14px rgb(245, 242, 242) inset;
 }
 
-.sub-menu {
+ul.menu .sub-menu {
     display: none;
     position: absolute;
     top: 100%;
@@ -60,14 +60,14 @@ a:hover {
     
 }
 
-.sub-item a {
+ul.menu .sub-item a {
     position: relative;
     color: blue;
     line-height: 2rem;
    
 }
 
-.sub-item a:hover {
+ul.menu .sub-item a:hover {
     color: black;
     box-shadow:1px 2px 3px 3px rgb(224, 230, 250) inset;
     border-radius: 8px;
@@ -75,13 +75,13 @@ a:hover {
 
 }
 
-.item:hover>.sub-menu,
-li.sub-item:hover>ul.sub-menu {
+ul.menu .item:hover>.sub-menu,
+ul.menu li.sub-item:hover>ul.sub-menu {
     display: block;
 
 }
 
-ul.sub-menu .sub-menu {
+ul.menu ul.sub-menu .sub-menu {
     display: none;
     right: 100%;
     top: 0;
@@ -92,7 +92,7 @@ ul.sub-menu .sub-menu {
     min-width: 100px;
     left: 0;
 }
-.svg-menu{
+ul.menu .svg-menu{
     width: 16px;
     color: brown;
     font-weight: 900;
@@ -100,6 +100,6 @@ ul.sub-menu .sub-menu {
    position:absolute;
    margin-top:8px;
 }
-.svg-menu:hover{
+ul.menu .svg-menu:hover{
     margin-top: 30px;
 }
