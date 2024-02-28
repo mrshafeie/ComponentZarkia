@@ -1,0 +1,105 @@
+@font-face {
+    font-family: IRANSans;
+    src: url(./IRANSansWeb/IRANSansWeb.woff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: IRANSans;
+
+}
+
+body {
+    direction: rtl;
+    margin: 0 auto;
+    font-family: IRANSans;
+}
+
+.container {
+    margin-top: 100px;
+    width: 700px;
+    min-height: 15px;
+}
+
+
+
+ul.menu {
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.item {
+    display: inline-block;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 20px 16px;
+    position: relative;
+}
+
+a:hover {
+    color: blue;
+    padding: 9px 10px;
+    box-shadow: 2px 2px 2px 14px rgb(245, 242, 242) inset;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 160px;
+    
+}
+
+.sub-item a {
+    position: relative;
+    color: blue;
+    line-height: 2rem;
+   
+}
+
+.sub-item a:hover {
+    color: black;
+    box-shadow:1px 2px 3px 3px rgb(224, 230, 250) inset;
+    border-radius: 8px;
+    line-height: 3rem;
+
+}
+
+.item:hover>.sub-menu,
+li.sub-item:hover>ul.sub-menu {
+    display: block;
+
+}
+
+ul.sub-menu .sub-menu {
+    display: none;
+    right: 100%;
+    top: 0;
+
+}
+
+.there {
+    min-width: 100px;
+    left: 0;
+}
+.svg-menu{
+    width: 16px;
+    color: brown;
+    font-weight: 900;
+   text-align: start;
+   position:absolute;
+   margin-top:8px;
+}
+.svg-menu:hover{
+    margin-top: 30px;
+}

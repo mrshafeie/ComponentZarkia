@@ -1,31 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" >
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu-one</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="other/css/style.css">
 </head>
+
 <body>
     <div class="container">
         <ul class="menu">
-         <li><a href=""> خانه</a></li>
-         <li><a href=""> محصولات</a></li>
-         <li><a href=""> خدمات</a></li>
-         <li><a href=""> تماس با ما </a>
-        <ul>
-            <li><a href="#">item1   </a></li>
-            <li><a href="#">item2</a></li>
-            <li><a href="#">item3</a></li>
-            <li><a href="#">item4</a></li>
-            <li><a href="#">item5</a></li>
-            <li><a href="#">item6</a></li>
-        </ul>
-        </li>
-         <li><a href=""> درباره ی ما</a></li>
-         <li><a href=""> آموزش </a></li>
-         <li><a href=""> مقالات</a></li>
+            <li class="item"><a href=""> خانه</a></li>
+            <li class="item"></li><a href=""> محصولات</a></li>
+            <li class="item"></li><a href=""> خدمات</a></li>
+            <li class="item">
+                <a href=""> تماس با ما 
+                    <svg class="svg-menu" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/>
+                      </svg>
+                </a>
+                <ul class="sub-menu">
+                    <li class="sub-item"><a href="">ایتم های زیر منو </a></li>
+                    <li class="sub-item"> <a href="">ایتم های زیر منو </a></li>
+                    <li class="sub-item"> <a href="">ایتم های زیر منو 
+                        <svg class="svg-menu" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                          </svg>  
+                    </a>
+                    
+                     <ul class="sub-menu">
+                        <li><a href="#">item-2</a></li>
+                        <li><a href="#">item-2</a></li>
+                        <li class="sub-item"><a href="#">item-2
+                            <svg class="svg-menu" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/>
+                              </svg> 
+                        </a>
+                            <ul class="sub-menu there">
+                                <li class="sub-item"><a href="#">item-2</a></li>
+                                <li class="sub-item"><a href="#">item-2</a></li>
+                                <li class="sub-item"><a href="#">item-2</a></li>
+                             </ul>
+                            </li>
+                        </li>
+                     </ul>
+                    </li>
+                    <li class="sub-item"> <a href="">ایتم های زیر منو </a></li>
+                    <li class="sub-item"> <a href="">ایتم های زیر منو </a></li>
+                </ul>
+            </li>
+            <li class="item"><a href=""> درباره ی ما</a></li>
+            <li class="item"><a href=""> آموزش </a></li>
+            <li class="item"><a href=""> مقالات</a></li>
         </ul>
     </div>
 </body>
+
 </html>
