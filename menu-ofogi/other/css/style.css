@@ -18,14 +18,15 @@ body {
     direction: rtl;
     margin: 0 auto;
     font-family: IRANSans;
+    background-color: rgb(238, 240, 243);
    
 }
 /* منوافقی mene ogogi  */
 .container {
     margin-top: 100px;
-    width: auto
-    ;
+    width: auto;
     min-height: 15px;
+  
 }
 
 ul.menu {
@@ -50,11 +51,11 @@ ul.menu a {
 ul.menu a:hover {
     color: blue;
     padding: 9px 10px;
-    box-shadow: 2px 2px 2px 14px rgb(245, 242, 242) inset;
+    box-shadow: 2px 2px 2px 14px rgb(236, 240, 243) inset;
 }
 
 ul.menu .sub-menu {
-    display: block;
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -70,7 +71,7 @@ ul.menu .sub-item a {
 
 ul.menu .sub-item a:hover {
     color: black;
-    box-shadow: 1px 2px 3px 3px rgb(224, 230, 250) inset;
+    box-shadow: 1px 2px 3px 13px rgb(236, 240, 243) inset;
     border-radius: 8px;
     line-height: 3rem;
 
@@ -88,7 +89,7 @@ ul.menu ul.sub-menu .sub-menu {
     top: 0;
 
 }
-/* ul.menu ul.sub-menu .sub-menu */
+
 
 .there {
     min-width: 100px;
@@ -97,38 +98,47 @@ ul.menu ul.sub-menu .sub-menu {
 
  .svg-menu {
     width: 16px;
-    color: brown;
+    color: brown !important;
     font-weight: 900;
     text-align: start;
     position: absolute;
     margin-top: 8px;
 }
 ul.menu .svg-menu:hover {
-    margin-top: 30px;
+ 
+    position: absolute;
 }
-/* menubar */
-/* .menubar{
+/* menubar  */
+ .menubar{
+ margin-top: 200px;
     line-height: 2rem;
     position: relative;
+   
   
 }
-.sub-menu{
-  display: block;
-    position: relative;
-    top: 100%;
-    right: 0;
+
+.sub-item-one{
+   text-align:start;
+   display: block;
+   position: relative;
 }
-.menebar-item{
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 90%;
-}
-.sub-item.menebar-item .sub-item .navbar:hover{
-    display: block;
+.sub-item-one a{
+    color:gray
+}.sub-item-one a:hover{
+    color: blue;
+  
 }
 .navbar{
-  
-    top: 100%;
-    right: 0;
-} */
+    position: absolute;
+    display: none;
+    right: 16%;
+    top: 0;
+}
+
+
+.menubar .sub-menu .sub-item-one:hover>.menubar-item{
+    display: block !important;
+    color: rgb(27, 74, 175);
+    /* position: absolute; */
+}
+
